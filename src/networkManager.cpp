@@ -8,7 +8,7 @@ WiFiServer server(80);
 NetworkManager::NetworkManager() {
   WiFi.mode(WIFI_AP);
   // WiFi.begin(SSID, Network pass)
-  WiFi.begin(HOMEWIFI, HOMEPASS);
+  WiFi.begin("Snusdays", "BetaZeta1000!");
   server.begin();
 }
 
@@ -44,7 +44,7 @@ void NetworkManager::checkHttpServer() {
 
   // apply leds
   if (lightManager != 0) {
-    lightManager->applyLeds(result.ledCount);
+    lightManager->applyLeds(result);
   }
 
 }

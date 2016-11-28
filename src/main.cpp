@@ -4,24 +4,6 @@
 #include "networkManager.h"
 #include "lightManager.h"
 
-/*
-#include "ArduinoJson.h"
-#include "ESP8266WiFi.h"
-*/
-/*
-// How many leds in your strip?
-#define NUM_LEDS 100
-#define DATA_PIN 3
-
-#define BRIGHTNESS         255
-
-// Define the array of leds
-CRGB leds[NUM_LEDS];
-
-//WiFiServer server(80);
-int numLit(0);
-*/
-
 // Managers
 NetworkManager* networkManager;
 LightManager* lightManager;
