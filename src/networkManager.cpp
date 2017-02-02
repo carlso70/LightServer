@@ -39,7 +39,7 @@ void NetworkManager::checkHttpServer() {
   Serial.println(request);
 
   requestValues result = parseRequest(request);
-  client.write("HTTP/1.0 200 OK\n\nFuck you buddy: ");
+  client.write("HTTP/1.0 200 OK\n\nHey you buddy: ");
   client.write(String(result.ledCount).c_str());
 
   // apply leds
